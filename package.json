@@ -10,6 +10,14 @@
     "test": "jest",
     "windows": "react-native run-windows"
   },
+  "codegenConfig": {
+    "name": "WindowsSampleApp",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "windows": {
+      "namespace": "HogeCodegen"
+    }
+  },
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.4",
