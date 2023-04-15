@@ -4,7 +4,8 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  IgnorableNamespaces="uap mp iot">
 
   <Identity
     Name="533f39ca-061b-4456-b12f-5979e66dfca8"
@@ -46,5 +47,6 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <iot:Capability Name="systemManagement"/>
   </Capabilities>
 </Package>

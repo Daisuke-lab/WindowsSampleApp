@@ -25,7 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { Pressable } from "react-native";
-
+import runProcess from './Process';
 import {showNotification} from "./Notifications"
 
 function App(): JSX.Element {
@@ -33,14 +33,7 @@ function App(): JSX.Element {
 
   const test = () => {
     console.log("you are in test")
-    showNotification({
-      template: Windows.UI.Notifications.ToastTemplateType.toastImageAndText01,
-      text: "hello world",
-      image: {
-        src: "https://microsoft.github.io/react-native-windows/img/header_logo.svg",
-        alt: "React logo",
-      },
-    });
+    runProcess()
   }
   return (
     <SafeAreaView style={Colors.darker}>
@@ -53,23 +46,5 @@ function App(): JSX.Element {
   );
 }
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
