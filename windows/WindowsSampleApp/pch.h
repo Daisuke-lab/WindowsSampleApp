@@ -24,4 +24,5 @@
 
 using namespace winrt::Windows::Foundation;
 
+//これ必須
 #include <winrt/WinRTTurboModule.h>
